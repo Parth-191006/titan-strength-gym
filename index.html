@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titan Strength Gym</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b') center/cover;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 14px 28px;
+    margin: 10px;
+    background: #e63946;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: white;
+    color: #e63946;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 30px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing {
+    background: #111;
+}
+
+.price-box {
+    background: #1c1c1c;
+    padding: 40px 20px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.price-box:hover {
+    transform: scale(1.05);
+}
+
+.price-box button {
+    margin-top: 15px;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>
+<span style="color:white;">Titan</span>
+<span style="color:#e63946;">Strength</span>
+</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Transform Your Body. Transform Your Life.</h2>
+<p>Mumbai’s Most Trusted Fitness Destination</p>
+
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+Book Free Trial
+</button>
+
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+Call Now
+</button>
+
+</section>
+
+<section class="section fade-in">
+<h2>Why Choose Us</h2>
+<div class="cards">
+<div class="card">
+<h3>Certified Trainers</h3>
+<p>Expert guidance for maximum results.</p>
+</div>
+<div class="card">
+<h3>Modern Equipment</h3>
+<p>State-of-the-art machines and weights.</p>
+</div>
+<div class="card">
+<h3>Flexible Timings</h3>
+<p>Open 6AM to 11PM daily.</p>
+</div>
+</div>
+</section>
+
+<section class="section fade-in">
+<h2>Our Services</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" width="100%" style="border-radius:10px;">
+<h3>Weight Training</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" width="100%" style="border-radius:10px;">
+<h3>Fat Loss Programs</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" width="100%" style="border-radius:10px;">
+<h3>Personal Training</h3>
+</div>
+
+</div>
+</section>
+
+<section class="section pricing fade-in">
+<h2>Membership Plans</h2>
+<p style="color:#e63946;">Limited Offer: 20% Off For New Members</p>
+
+<div class="cards">
+<div class="price-box">
+<h3>Basic</h3>
+<p>₹1,499 / month</p>
+<button>Join Now</button>
+</div>
+
+<div class="price-box" style="border:2px solid #e63946;">
+<h3>Pro (Most Popular)</h3>
+<p>₹2,499 / month</p>
+<button>Join Now</button>
+</div>
+
+<div class="price-box">
+<h3>Elite</h3>
+<p>₹5,999 / month</p>
+<button>Join Now</button>
+</div>
+</div>
+</section>
+
+<section class="section fade-in">
+<h2>What Our Members Say</h2>
+<div class="cards">
+<div class="card">
+<p>"Best gym in the area! Trainers are very supportive."</p>
+<h4>- Rahul S.</h4>
+</div>
+<div class="card">
+<p>"Lost 8kg in 3 months. Amazing atmosphere!"</p>
+<h4>- Sneha P.</h4>
+</div>
+<div class="card">
+<p>"Clean equipment and flexible timings. Highly recommended."</p>
+<h4>- Arjun K.</h4>
+</div>
+</div>
+</section>
+
+<section class="section fade-in" id="contact">
+<h2>Get Your Free Trial Today</h2>
+<p>Fill in your details and our trainer will contact you.</p>
+
+<form>
+<input type="text" placeholder="Your Name" required><br><br>
+<input type="tel" placeholder="Your Phone Number" required><br><br>
+<button type="submit">Book Free Trial</button>
+</form>
+</section>
+
+<footer>
+© 2026 Titan Strength Gym. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/919000000000" target="_blank"
+style="position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px 20px;border-radius:50px;
+text-decoration:none;font-weight:bold;">
+WhatsApp Us
+</a>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    faders.forEach(fader => {
+        const boxTop = fader.getBoundingClientRect().top;
+
+        if(boxTop < triggerBottom){
+            fader.classList.add('visible');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
